@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dating Site</title>
+<style>
+  /* General styling */
+  body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Scrolling Progress Bar */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #f3f3f3;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+
+  .progress-bar {
+    height: 8px;
+    background: #007BFF;
+    width: 0%;
+  }
+
+  /* Parallax section */
+  .parallax {
+    background-image: url("https://static.theprint.in/wp-content/uploads/2024/07/Dating-story-15-png-696x392.png?compress=true&quality=80&w=800&dpr=1.3");
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* Content section */
+  .content {
+    padding: 60px 20px;
+    font-size: 24px;
+    color: white;
+  }
+
+  /* Colorful containers */
+  .container-blue {
+    background-color: #007BFF;
+  }
+
+  .container-green {
+    background-color: #28A745;
+  }
+
+  .container-yellow {
+    background-color: #FFC107;
+    color: black;
+  }
+
+  .container-red {
+    background-color: #DC3545;
+  }
+
+  .container {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+
+  /* Small parallax images */
+  .small-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    margin: 20px 0;
+  }
+
+  .small-parallax img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Scrolling Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>
+
+<!-- Parallax Image Section -->
+<div class="parallax"></div>
+
+<!-- First Container -->
+<div class="container container-blue">
+  <div class="content">
+    <h2>An Urge to peek out there</h2>
+    <p>Even the most evolved women who end relationships and situationships with the semi-hostile “good luck for your future” text can’t resist the urge to stalk their exes once in a while. When you dodge a bullet, it’s only natural to check where it eventually lands. If an old boyfriend starts sporting a hideous mustache after the break-up, you must force yourself to look at it once so that you don’t ever miss him. My college mate regularly reads her ex’s newsletter to cringe at his wannabe musician cum new-age philosopher personality. Another girl keeps checking her ex’s Spotify playlist. Then there is the intelligent woman who has mugged all her exes’ phone numbers only to share them with random restaurants and marketing hawks.</p>
+  </div>
+  <div class="small-parallax" style="background-image: url('https://nordvpn.com/wp-content/uploads/blog-social-line-stalker-cybersecurity-1200x628-1.png');"></div>
+</div>
+
+<!-- Second Container -->
+<div class="container container-green">
+  <div class="content">
+    <h2>Checking their LinkedIn profiles</h2>
+    <p>Checking LinkedIn profiles, tagged pictures, scrutinizing tweets and comments on Facebook and Instagram posts are the regular ways to update yourself about your ex’s new life. But if you are supposed to be practicing no contact—a recommended digital detox to get over a dead relationship—you need to go stealth mode. Cuckoo ex-lovers create fake accounts to re-enter the former home turf, watching from the sidelines which new or old player is scoring all the attention. And if you can’t get through to your ex, you can easily track down the one he is currently dating. As a wise woman once told me, for easy access to tea, keep your ex’s partner closer. I bet it’s delightful to know how your old trash is stinking up new people’s apartments.</p>
+  </div>
+  <div class="small-parallax" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX5ExPlybecoOFp6Jo1JilNXZTol5vSkNwBA&s');"></div>
+</div>
+
+<!-- Third Container -->
+<div class="container container-yellow">
+  <div class="content">
+    <h2>Stalking out an EX</h2>
+    <p>My 35-year-old aunt, who is occasionally happy in her marriage and busy cleaning up her toddler’s YouTube algorithm, felt a sudden curiosity about her pre-med boyfriend on a random Tuesday. The old romance that once thrived on PCO calls was now to be tracked down through 15 different apps. Fortunately, her Gen Z niece (me) came to the rescue. After scouring friend lists of mutuals and alumni pages on Facebook, resurrecting long-dead WhatsApp groups of college friends and tracking phone numbers on Truecaller, we landed in an unlikely place: the official website of Lucknow’s King George’s Medical University. There he was, the former long-haired scrawny biker dude, now sporting a stethoscope and a dad bod.</p>
+  </div>
+  <div class="small-parallax" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkstHDUsjcr3e67SqRLZ2FJfcIH2Wkp7BsoQ&s');"></div>
+</div>
+
+<!-- Fourth Container -->
+<div class="container container-red">
+  <div class="content">
+    <h2>What psychologists can learn from these stalkers</h2>
+    <p>The creative ways people track down their exes should be studied by psychologists. In a viral tweet, a guy wrote how he created a fake company profile on LinkedIn, offered a job to his ex and even scheduled an interview with her. Poor thing would have burned the midnight oil prepping for the interview only to walk in and find her ex waiting to prank her.</p>
+  </div>
+  <div class="small-parallax" style="background-image: url('https://media.licdn.com/dms/image/D4D12AQH5lUm4bApWOg/article-cover_image-shrink_600_2000/0/1658812130648?e=2147483647&v=beta&t=b3SR62fhravAbs-dO-CIc_s4Hw4r5D47vltm1YdKN7A');"></div>
+</div>
+
+<script>
+  // Scrolling Progress Bar Script
+  window.onscroll = function() {
+    myFunction();
+  };
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+</script>
+
+</body>
+</html>
